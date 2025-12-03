@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import "../index.css";
 
-const InputField = ({ label, value, onChange, placeholder, name, type }) => (
+const InputField = ({ label, value, onChange, placeholder, name, type, autoComplete }) => (
     <label className="flex flex-col">
         <span className="text-white font-medium mb-4">{label}</span>
         <input
@@ -17,6 +17,7 @@ const InputField = ({ label, value, onChange, placeholder, name, type }) => (
             value={value}
             onChange={onChange}
             placeholder={placeholder}
+            autoComplete={autoComplete}
             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
         />
     </label>
@@ -120,6 +121,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="Insert Your name here..."
                         type="text"
+                        autoComplete="name"
                     />
                     {nameError && (
                         <span className="text-red-500">{nameError}</span>
@@ -132,6 +134,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="What's your email address?"
                         type="email"
+                        autoComplete="email"
                     />
                     {emailError && (
                         <span className="text-red-500">{emailError}</span>
@@ -144,6 +147,7 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="What you want to say...?"
                         type="text"
+                        autoComplete="off"
                     />
 
                     <button
