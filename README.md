@@ -105,26 +105,23 @@ npm run dev
 ## ⚡ Core Features
 
 - 📱 Responsive Design
-
-  - Mobile-first approach
-  - Seamless experience across all devices
-  - Adaptive layouts and components
+    - Mobile-first approach
+    - Seamless experience across all devices
+    - Adaptive layouts and components
 
 - 🎯 Dynamic Content
-
-  - Interactive project showcase
-  - Engaging experience section
-  - Animated skill representations
+    - Interactive project showcase
+    - Engaging experience section
+    - Animated skill representations
 
 - 🎨 Modern UI/UX
-
-  - Smooth Framer Motion animations
-  - Intuitive navigation
-  - Clean and professional design
-  - Interactive 3D elements using Three.js
+    - Smooth Framer Motion animations
+    - Intuitive navigation
+    - Clean and professional design
+    - Interactive 3D elements using Three.js
 
 - ✉️ Email Integration
-  - Contact form using EmailJS
+    - Contact form using EmailJS
 
 ## 📄 License
 
